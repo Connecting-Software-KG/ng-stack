@@ -1,9 +1,9 @@
 {
-  "name": "@ng-stack/forms",
+  "name": "@coso-ng-stack/forms",
   "version": "4.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KostyaTretyak/ng-stack/tree/master/projects/forms"
+    "url": "https://github.com/Connecting-Software-KG/ng-stack/tree/main/projects/forms"
   },
   "author": {
     "name": "Костя Третяк",
@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KostyaTretyak/ng-stack/issues?q=label%3A%22project%3A+forms%22"
+    "url": "https://github.com/Connecting-Software-KG/ng-stack/issues"
   },
   "peerDependencies": {
     "@angular/core": "^17.0.0",
@@ -24,5 +24,8 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
