@@ -1,0 +1,26 @@
+{
+  "name": "@ng-stack/contenteditable",
+  "version": "2.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KostyaTretyak/ng-stack/tree/master/projects/contenteditable"
+  },
+  "author": {
+    "name": "Костя Третяк",
+    "email": "ktretiak.in.ua@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "contenteditable"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KostyaTretyak/ng-stack/issues?q=label%3A%22project%3A+contenteditable%22"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=4.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
