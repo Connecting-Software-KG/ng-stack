@@ -1,4 +1,4 @@
-# @ng-stack/forms
+# coso-ngstack-forms
 
 > provides wrapped Angular's Reactive Forms to write its more strongly typed.
 
@@ -19,13 +19,13 @@
 ## Install
 
 ```bash
-npm i @ng-stack/forms
+npm i coso-ngstack-forms
 ```
 
 OR
 
 ```bash
-yarn add @ng-stack/forms
+yarn add coso-ngstack-forms
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ Import into your module `NgsFormsModule`, and no need import `ReactiveFormsModul
 reexported by `NgsFormsModule`.
 
 ```ts
-import { NgsFormsModule } from '@ng-stack/forms';
+import { NgsFormsModule } from 'coso-ngstack-forms';
 
 // ...
 
@@ -48,12 +48,12 @@ import { NgsFormsModule } from '@ng-stack/forms';
 
 })
 ```
-Then you should be able just import and using classes from `@ng-stack/forms`.
+Then you should be able just import and using classes from `coso-ngstack-forms`.
 
 ### Using form model
 
 ```ts
-import { FormGroup, FormControl, FormArray } from '@ng-stack/forms';
+import { FormGroup, FormControl, FormArray } from 'coso-ngstack-forms';
 
 const formControl = new FormControl('some string');
 const value = formControl.value; // some string
@@ -95,7 +95,7 @@ appropriate types for form controls by their form models.
 Simple example:
 
 ```ts
-import { FormControl, FormGroup } from '@ng-stack/forms';
+import { FormControl, FormGroup } from 'coso-ngstack-forms';
 
 // Form model
 class Address {
@@ -126,7 +126,7 @@ What to do in this case? For this purpose a special type `Control<T>` was intend
 For example:
 
 ```ts
-import { FormBuilder, Control } from '@ng-stack/forms';
+import { FormBuilder, Control } from 'coso-ngstack-forms';
 
 // Form Model
 interface Person {
@@ -149,7 +149,7 @@ const birthDate: Date = form.value.birthDate; // As you can see, `Control<Date>`
 If the form model interface comes from an external library, you can do the following:
 
 ```ts
-import { FormBuilder, Control } from '@ng-stack/forms';
+import { FormBuilder, Control } from 'coso-ngstack-forms';
 
 // External Form Model
 interface ExternalPerson {
@@ -256,7 +256,7 @@ See also [Known issues with ValidatorFn](#known-issues-with-validatorFn).
 
 ### Support input with "file" type
 
-Since version 1.1.0, `@ng-stack/forms` supports `input[type=file]`.
+Since version 1.1.0, `coso-ngstack-forms` supports `input[type=file]`.
 
 The module will be set instance of `FormData` to `formControl.value`,
 and output event `select` with type `File[]`:
@@ -282,7 +282,7 @@ onSelect(files: File[]) {
 You can validate the `formControl` with four methods:
 
 ```ts
-import { Validators, FormControl } from '@ng-stack/forms';
+import { Validators, FormControl } from 'coso-ngstack-forms';
 
 // ...
 
@@ -337,7 +337,7 @@ By default `preserveValue="false"` but if you want set `preserveValue="true"`, k
 Without a data type hint, there is a limitation of the TypeScript that does not allow you to correctly infer the data type for nested form controls based on the usage:
 
 ```ts
-import { FormControl, FormGroup, FormArray } from '@ng-stack/forms';
+import { FormControl, FormGroup, FormArray } from 'coso-ngstack-forms';
 
 // Next block code tested with TypeScript 4.1.2
 
@@ -463,4 +463,4 @@ See also issue on github [feat(forms): hide get() method of FormControl from pub
 
 ### ValidatorFn and AsyncValidatorFn
 
-Native `ValidatorFn` and `AsyncValidatorFn` are interfaces, in `@ng-stack/forms` they are types.
+Native `ValidatorFn` and `AsyncValidatorFn` are interfaces, in `coso-ngstack-forms` they are types.

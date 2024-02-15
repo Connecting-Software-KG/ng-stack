@@ -16,7 +16,7 @@ import { FormControl } from './form-control';
  *
  * ### Example:
 ```ts
-import { FormBuilder, Control } from '@ng-stack/forms';
+import { FormBuilder, Control } from 'coso-ngstack-forms';
 
 const fb = new FormBuilder();
 
@@ -40,7 +40,7 @@ const birthDate: Date = form.value.birthDate;
  * If the form model interface comes from an external library, you can do the following:
  *
 ```ts
-import { FormBuilder, Control } from '@ng-stack/forms';
+import { FormBuilder, Control } from 'coso-ngstack-forms';
 
 const fb = new FormBuilder();
 
