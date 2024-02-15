@@ -1,17 +1,18 @@
 {
-  "name": "@coso-ng-stack/forms",
+  "name": "@coso/ng-stack-forms",
   "version": "4.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Connecting-Software-KG/ng-stack/tree/main/projects/forms"
+    "url": "https://github.com/Connecting-Software-KG/ng-stack"
   },
   "author": {
-    "name": "Костя Третяк",
-    "email": "ktretiak.in.ua@gmail.com"
+    "name": "Connecting Software",
+    "email": "office@connecting-software.com"
   },
   "keywords": [
     "angular",
-    "forms"
+    "forms",
+    "ng-stack"
   ],
   "license": "MIT",
   "bugs": {
@@ -24,8 +25,5 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
